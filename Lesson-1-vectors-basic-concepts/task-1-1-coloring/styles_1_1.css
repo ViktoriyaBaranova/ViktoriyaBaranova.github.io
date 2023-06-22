@@ -99,8 +99,9 @@ canvas{
     img{
         width: 25px; 
         height: 25px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
     }
-    section.section-paint img{
+   section.section-paint img{
         height: 22px;
         width: 22px;
         margin-right: 7px;
@@ -122,5 +123,8 @@ canvas{
     section.section-result{
         align-items: center;
         margin-left: 20%;
-}
+    }
+    [data-tooltip]::after {
+        left: 0%; top: 50%; /* Положение подсказки */
+    } 
 }
